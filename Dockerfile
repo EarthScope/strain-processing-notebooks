@@ -1,4 +1,4 @@
-FROM scipy-notebook
+FROM ghcr.io/earthscope/strain-scipy-notebook
 
 WORKDIR /home/jovyan/
 MAINTAINER = Mike Gottlieb, Earthscope Inc. mike.gottlieb@earthscope.org

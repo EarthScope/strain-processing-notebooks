@@ -31,6 +31,8 @@ docker run \
         ghcr.io/earthscope/strain-processing-notebooks
         #-v ${PWD}/notebooks:/home/jovyan/notebooks \
 
+#docker push ghcr.io/earthscope/strain-processing-notebooks
+
 # -e JUPYTER_ENABLE_LAB=yes
 #        -v ~/repos/base_docker_stack/notebooks:/home/jovyan/event_response/notebooks \
 #        -v ~/repos/base_docker_stack/events:/home/jovyan/event_response/events \
