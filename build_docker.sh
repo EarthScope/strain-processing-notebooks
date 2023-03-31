@@ -10,12 +10,13 @@ docker rm strain-processing-notebooks-container
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
 echo "Remove strain-processing-notebooks image, image that made strain-processing-notebooks-container"
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
-docker image rm strain-processing-notebooks_development
+docker image rm strain-processing-notebooks
 
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
 echo "ReBuild strain-processing-notebooks image in current directory"
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
-docker build --rm --no-cache -t strain-processing-notebooks .
+#docker build --rm --no-cache -t strain-processing-notebooks .
+docker build --rm -f Dockerfile -t strain-processing-notebooks .
 #--no-cache
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
 echo "docker run strain-processing-notebooks_docker container"

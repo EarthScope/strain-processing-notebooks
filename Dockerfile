@@ -1,11 +1,10 @@
-FROM jupyter/scipy-notebook
+FROM scipy-notebook
 
 WORKDIR /home/jovyan/
 MAINTAINER = Mike Gottlieb, Earthscope Inc. mike.gottlieb@earthscope.org
 
-RUN mamba install geopy
-RUN pip install 'earthscopestraintools[mseed,tiledb]'==0.0.9
+RUN pip install 'earthscopestraintools[mseed,tiledb]'==0.1.3
 
 EXPOSE 8888
-CMD ["jupyter", "lab","--port=8888"]
+CMD ["jupyter", "lab","--port=8888", "--allow-root"]
 
