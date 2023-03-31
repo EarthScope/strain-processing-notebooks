@@ -10,13 +10,13 @@ docker rm strain-processing-notebooks-container
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
 echo "Remove strain-processing-notebooks image, image that made strain-processing-notebooks-container"
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
-docker image rm strain-processing-notebooks
+docker image rm ghcr.io/earthscope/strain-processing-notebooks
 
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
 echo "ReBuild strain-processing-notebooks image in current directory"
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
 #docker build --rm --no-cache -t strain-processing-notebooks .
-docker build --rm -f Dockerfile -t strain-processing-notebooks .
+docker build --rm -f Dockerfile -t ghcr.io/earthscope/strain-processing-notebooks .
 #--no-cache
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
 echo "docker run strain-processing-notebooks_docker container"
@@ -28,8 +28,8 @@ docker run \
         -it \
         -p 8888:8888 \
         --name='strain-processing-notebooks-container' \
- 	      -v ${PWD}/notebooks:/home/jovyan/notebooks \
-        strain-processing-notebooks
+        ghcr.io/earthscope/strain-processing-notebooks
+        #-v ${PWD}/notebooks:/home/jovyan/notebooks \
 
 # -e JUPYTER_ENABLE_LAB=yes
 #        -v ~/repos/base_docker_stack/notebooks:/home/jovyan/event_response/notebooks \
