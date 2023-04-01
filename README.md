@@ -20,3 +20,12 @@ Some example notebooks are stored for reference in the container image under exa
 
 If you want to modify notebooks and build your own, work in the notebooks directory so that 
 your changes will be saved after the container stops.
+
+
+## Linked images:
+- ghcr.io/earthscope/fortran-base-image 
+  - Ubuntu 20.04 with baytap08 and spotl installed
+- ghcr.io/earthscope/strain-scipy-notebook
+  - jupyter scipy-notebook built off fortran-base-image
+- ghcr.io/earthscope/strain-processing-notebooks
+  - strain-scipy-notebook with earthscopestraintools installed
