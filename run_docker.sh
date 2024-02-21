@@ -16,10 +16,8 @@ echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
 docker run \
         -it \
         -p 8888:8888 \
-        -v /var/run/docker.sock:/var/run/docker.sock \
-        -p 8080:8080 \
         --name='strain-processing-notebooks' \
- 	      -v ${PWD}/notebooks:/home/jovyan/notebooks \
+ 	-v ${PWD}/notebooks:/home/jovyan/notebooks \
         ghcr.io/earthscope/strain-processing-notebooks
 
 echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*

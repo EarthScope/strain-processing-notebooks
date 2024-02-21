@@ -28,6 +28,7 @@ docker run \
         -it \
         -p 8888:8888 \
         --name='strain-processing-notebooks-container' \
+        -v ${PWD}/notebooks:/home/jovyan/notebooks \
         ghcr.io/earthscope/strain-processing-notebooks
         #-v ${PWD}/notebooks:/home/jovyan/notebooks \
 
