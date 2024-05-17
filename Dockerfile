@@ -3,7 +3,7 @@ FROM ghcr.io/earthscope/strain-scipy-notebook
 WORKDIR /home/jovyan/
 LABEL authors = "Mike Gottlieb, Earthscope Inc. mike.gottlieb@earthscope.org"
 
-RUN pip install 'earthscopestraintools[mseed,tiledb]'==0.1.34
+RUN pip install 'earthscopestraintools[mseed,tiledb]'==0.1.37
 
 RUN mkdir examples/
 COPY notebooks/level2.ipynb examples/level2.ipynb
