@@ -2,7 +2,7 @@
 This repo runs a containerized environment for strain processing notebooks.  It is built on Ubuntu 20.04, 
 with SPOTL, BAYTAP-08, Jupyter Scipy Notebooks.
 
-This directory will be mounted to the container, so any figures, data, or local changes will be saved after the container shuts down.
+The local notebooks directory will be mounted to the container, so any figures, data, or local changes made in that directory will be saved after the container shuts down.
 
 ## Quick-start (if Docker is already installed):
 
@@ -28,8 +28,6 @@ Once the kernel has started, click the last link in the terminal to load Jupyer 
 If you are unfamiliar with Jupyter, we suggest taking a look through the Jupyter tutorials linked under the ```help > Jupyter Reference``` menu in Jupyter Lab. 
 
 Finally, test that the environment is working properly by running through the ```environment-test.ipynb``` notebook in the ```notebooks``` directory. 
-
-Some example notebooks are stored for reference in the container image under examples.
 
 If you want to modify notebooks and build your own, work in the notebooks directory so that 
 your changes will be saved after the container stops.
