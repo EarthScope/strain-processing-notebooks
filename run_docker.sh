@@ -15,6 +15,7 @@ echo *--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
 # Open jupyter notebook directly
 docker run \
         -it \
+        --pull=always \
         -p 8888:8888 \
         --name='strain-processing-notebooks' \
  	-v ${PWD}/notebooks:/home/jovyan/notebooks \
