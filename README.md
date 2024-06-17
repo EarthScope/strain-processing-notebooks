@@ -27,7 +27,7 @@ This will get the docker image from the github container registry, mount the not
 Once the kernel has started, click the last link in the terminal to load Jupyer Lab in a browser
 >  http://127.0.0.1:8888/lab?token=...
 
-To test things are working, navigate to notebooks directory and run the environment-test.ipynb notebook.  Please reach out to mike.gottlieb@earthscope.org if you run into issues.
+**To test things are working, navigate to notebooks directory and run the environment-test.ipynb notebook.  Please reach out to mike.gottlieb@earthscope.org if you run into problems.**
 
 
 If you are unfamiliar with Jupyter, we suggest taking a look through the Jupyter tutorials linked under the ```help > Jupyter Reference``` menu in Jupyter Lab. 
