@@ -1,6 +1,7 @@
-# Strain Procesing Notebooks
-This repo runs a containerized environment for strain processing notebooks.  It is built on Ubuntu 20.04, 
-with SPOTL, BAYTAP-08, Jupyter Scipy Notebooks.
+# Rome Strainmeter Shortcourse Notebook Environment Install Instructions
+This repo runs a containerized environment for strain processing notebooks.  It is built on Ubuntu 20.04, with SPOTL, BAYTAP-08, Jupyter Scipy Notebooks.  
+
+The branch italy-2024 is built for use during the June 2024 Rome Strainmeter Short Course .
 
 The local notebooks directory will be mounted to the container, so any figures, data, or local changes made in that directory will be saved after the container shuts down.
 
