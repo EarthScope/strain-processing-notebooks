@@ -12,7 +12,9 @@ If you have git installed, you can clone the repository with the following:
 
 Alternatively, you can download the repository with this link: 
 > https://github.com/EarthScope/strain-processing-notebooks/archive/refs/heads/italy-2024.zip
-Run the ```run_docker.sh``` script from the downloaded (and unzipped) folder with the following command: 
+
+
+Cd into the repo and run the ```run_docker.sh``` script from the downloaded (and unzipped) folder with the following command: 
 
 For Mac/Linux Terminal:
 > ./run_docker.sh
