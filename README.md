@@ -8,7 +8,7 @@ The local notebooks directory will be mounted to the container, so any figures, 
 ## Quick-start (if Docker is already installed):
 
 If you have git installed, you can clone the repository with the following:
-> git clone -b italy-2024 git@github.com:EarthScope/strain-processing-notebooks.git
+> git clone -b italy-2024 https://github.com/EarthScope/strain-processing-notebooks.git
 
 Alternatively, you can download the repository with this link: 
 > https://github.com/EarthScope/strain-processing-notebooks/archive/refs/heads/italy-2024.zip
