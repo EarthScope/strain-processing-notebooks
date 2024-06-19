@@ -32,8 +32,6 @@ Once the kernel has started, click the last link in the terminal to load Jupyer 
 
 If you are unfamiliar with Jupyter, we suggest taking a look through the Jupyter tutorials linked under the ```help > Jupyter Reference``` menu in Jupyter Lab. 
 
-Finally, test that the environment is working properly by running through the ```environment-test.ipynb``` notebook in the ```notebooks``` directory. 
-
 If you want to modify notebooks and build your own, work in the notebooks directory so that 
 your changes will be saved after the container stops.
 
